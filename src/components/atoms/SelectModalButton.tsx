@@ -24,6 +24,8 @@ const SDiv = Styled.div`
     color: #000;
     font-size: 20px;
     cursor: pointer;
-    border-raidius: 10px;
+    border-radius: 10px;
+    display: grid;
+    place-content: center;
 `
 

@@ -1,9 +1,9 @@
 import Styled from "@emotion/styled";
 
-export const EyeSlashClose = () => {
+export const CheckIcon = () => {
     return (
         <SDiv>
-            <img src="/EyeSlash.svg" alt="eye" />
+            <img src="/CheckIcon.svg" alt="eye" />
         </SDiv>
     );
 };

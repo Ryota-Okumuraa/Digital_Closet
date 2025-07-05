@@ -17,10 +17,11 @@ export const SearchHistoryItem: FC<Props> = (props) => {
 };
 
 const SDiv = Styled.div`
-    backgroud-color: #e5e5e5;
+    background-color: #e5e5e5;
     border-radius:25px;
     color: #000;
     padding: 5px 20px;
+    width: fit-content;
 `
 
 

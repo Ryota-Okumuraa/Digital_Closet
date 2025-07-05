@@ -25,4 +25,5 @@ const SDiv = Styled.div`
     color: #000;
     font-size: 16px;
     cursor: pointer;
+    text-align: center;
 `

@@ -22,5 +22,6 @@ const SLink = Styled.p`
     font-size: 14px;
     width: 100%;
     text-align: right;
+    color: #000;
 `
 

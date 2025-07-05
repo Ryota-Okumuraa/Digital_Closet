@@ -21,6 +21,6 @@ const SDiv = Styled.div`
     color: #000;
     padding: 10px;
     width: 100%;
-    backdrop-filter: blue(10px);
+    backdrop-filter: blur(10px);
 `
 

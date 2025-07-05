@@ -5,7 +5,7 @@ type Props = {
     onClick: () => void;
 }
 
-export const IconLabel: FC<Props> = (props) => {
+export const NewGenerateIcon: FC<Props> = (props) => {
     const { onClick } = props;
 
     return (
@@ -22,6 +22,8 @@ const SDiv = Styled.div`
     border: 1px solid rgba(0, 0, 0, 0.1);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     background-color: #fff;
+    width: fit-content;
+    padding: 10px;
 `
 
 const SImg = Styled.img`

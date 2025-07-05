@@ -22,6 +22,8 @@ const SDiv = Styled.div`
     gap: 15px;
     justify-content: start;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    width: fit-content;
+    padding: 10px 15px;
 `
 
 const SBar = Styled.div`

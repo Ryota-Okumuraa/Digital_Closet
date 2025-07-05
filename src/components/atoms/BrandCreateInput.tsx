@@ -21,5 +21,10 @@ const SInput = Styled.input`
     height: 50px;
     padding: 0 10px;
     font-size: 14px;
-    border: none
+    border: none;
+    display: block;
+    width: 100%;
+    outline: none;
+    box-shadow: none;
+    caret-color: #000; /* 入力中のカーソル色を指定したい場合 */
 `

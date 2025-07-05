@@ -10,7 +10,7 @@ type Props = {
 export const AuthLoginTextLink: FC<Props> = (props) => {
     const { children } = props
     return (
-        <SSpan>children</SSpan>
+        <SSpan>{children}</SSpan>
     );
 };
 

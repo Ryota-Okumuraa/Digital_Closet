@@ -1,24 +1,25 @@
 import { FC } from "react";
 import Styled from "@emotion/styled";
-import { SearchIcon } from "./SeachIcon";
+import { SearchIcon } from "./Icon/SeachIcon";
 
 
 type Props = {
     value: string;
     onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
     onClick: () => void;
+    placeholder: string;
 }
 
 
 export const SearchInput: FC<Props> = (props) => {
-    const { value, onChange, onClick } = props;
+    const { value, onChange, onClick, placeholder } = props;
 
     return (
         <SWrapper>
             <SButton onClick={onClick} aria-label="検索する">
                 <SearchIcon />
             </SButton>
-            <SInput value={value} onChange={onChange} />
+            <SInput value={value} onChange={onChange} placeholder={placeholder} />
         </SWrapper>
     );
 };

@@ -1,11 +1,11 @@
 import Styled from "@emotion/styled";
 
 
-export const IconProfile = () => {
+export const ProfileIcon = () => {
 
     return (
         <SDiv>
-            <SImg src="/IconProgile.svg" alt="プロフィール" />
+            <SImg src="/IconProfile.svg" alt="プロフィール" />
         </SDiv>
     );
 };

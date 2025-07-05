@@ -1,9 +1,9 @@
 import Styled from "@emotion/styled";
 
-export const IconHome = () => {
+export const HomeIcon = () => {
     return (
         <SDiv>
-            <SImg src="/IconHome" alt="ホーム" />
+            <SImg src="/IconHome.svg" alt="ホーム" />
         </SDiv>
     );
 };

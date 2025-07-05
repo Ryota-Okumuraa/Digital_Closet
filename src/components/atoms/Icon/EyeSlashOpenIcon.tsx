@@ -1,9 +1,9 @@
 import Styled from "@emotion/styled";
 
-export const FilterIcon = () => {
+export const EyeSlashOpenIcon = () => {
     return (
         <SDiv>
-            <SImg src="/Filter.svg" alt="絞り込み"/>
+            <img src="/EyeSlashOpen.svg" alt="eye" />
         </SDiv>
     );
 };
@@ -12,8 +12,3 @@ const SDiv = Styled.div`
     width: 20px;
     height: 20px;
 `
-
-const SImg = Styled.img`
-    width: 100%;
-`
-
