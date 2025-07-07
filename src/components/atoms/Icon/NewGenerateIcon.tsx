@@ -15,7 +15,7 @@ export const NewGenerateIcon: FC<Props> = (props) => {
     );
 };
 
-const SDiv = Styled.div`
+const SDiv = Styled.button`
     border-radius: 9999px;
     display: grid;
     place-content: center;

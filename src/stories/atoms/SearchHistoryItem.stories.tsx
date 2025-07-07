@@ -14,6 +14,16 @@ type Story = StoryObj<typeof SearchHistoryItem>;
 
 export const Default: Story = {
     args: {
-        children: "ウェア"
+        isActive: false,
+        children: "ウェア",   
     }
 }
+
+export const WidthActive: Story = {
+    args: {
+        isActive: true,
+        children: "ウェア",
+        onClick: () => alert('クリックされました！'),
+    }
+}
+

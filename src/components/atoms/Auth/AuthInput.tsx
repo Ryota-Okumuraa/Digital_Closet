@@ -5,21 +5,13 @@ import { EyeSlashOpenIcon } from "../Icon/EyeSlashOpenIcon";
 import { EyeSlashCloseIcon } from "../Icon/EyeSlashCloseIcon";
 import { EmailIcon } from "../Icon/EmailIcon";
 import { LockKeyIcon } from "../Icon/LockKey";
+import { AuthInputProps, AuthInputKind } from "@/type/form";
 
 
-type Props = {
-    type: "email" | "password";
-    rightIcon?: boolean;
-    value: string;
-    placeholder: string;
-    onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
-    onClickRightIcon?: () => void;
-}
-
-export const AuthInput: FC<Props> = (props) => {
+export const AuthInput: FC<AuthInputProps> = (props) => {
     const { type, rightIcon = false, value, placeholder, onChange, onClickRightIcon } = props;
 
-    const IconMap: Record<"email" | "password", JSX.Element> = {
+    const IconMap: Record<AuthInputKind, JSX.Element> = {
         email: <EmailIcon />,
         password: <LockKeyIcon />
     }
@@ -65,6 +57,8 @@ const SInput = Styled.input`
     outline: none;
     box-shadow: none;
     caret-color: #000; /* 入力中のカーソル色を指定したい場合 */
+    font-size: 14px;
+    width: 100%;
 `
 
 const SIcon = Styled.div`

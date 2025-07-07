@@ -33,4 +33,5 @@ const SText = Styled.p<{ size: TextSize; weight: string; color: string; lineHeig
     color: ${({ color }) => color};
     font-weight: ${({ weight }) => weight};
     line-height: ${({ lineHeight }) => lineHeight};
+    margin: 0;
 `
