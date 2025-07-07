@@ -5,7 +5,7 @@ export const PlusIcon = () => {
 
     return (
         <SDiv>
-            <SImg src="/PlusIcon.svg" alt="プラス" />
+            <SImg src="/images/ui/PlusIcon.svg" alt="プラス" />
         </SDiv>
     );
 };

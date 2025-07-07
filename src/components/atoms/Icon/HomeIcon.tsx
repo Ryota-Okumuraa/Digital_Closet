@@ -3,7 +3,7 @@ import Styled from "@emotion/styled";
 export const HomeIcon = () => {
     return (
         <SDiv>
-            <SImg src="/IconHome.svg" alt="ホーム" />
+            <SImg src="/images/ui/IconHome.svg" alt="ホーム" />
         </SDiv>
     );
 };

@@ -3,7 +3,7 @@ import Styled from "@emotion/styled";
 export const EditIcon = () => {
     return (
         <SDiv>
-            <img src="/SecondaryButtonIcon.svg" alt="編集" />
+            <img src="/images/ui/SecondaryButtonIcon.svg" alt="編集" />
         </SDiv>
     );
 };

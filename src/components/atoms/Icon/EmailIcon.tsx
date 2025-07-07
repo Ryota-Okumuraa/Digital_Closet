@@ -4,7 +4,7 @@ export const EmailIcon = () => {
 
     return (
         <SDiv>
-            <img src="/EmailIcon.svg" alt="Email" />
+            <img src="/images/ui/EmailIcon.svg" alt="Email" />
         </SDiv>
     );
 };

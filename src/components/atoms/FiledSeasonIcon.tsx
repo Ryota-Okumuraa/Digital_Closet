@@ -7,10 +7,10 @@ type Props = {
 }
 
 const seasonMap: { [key in Props["season"]]: string } = {
-    spring: "/springIcon.svg",
-    summer: "/summerIcon.svg",
-    autumn: "/automIcon.svg",
-    whinter: "/whinterIcon.svg"
+    spring: "/images/ui/springIcon.svg",
+    summer: "/images/ui/summerIcon.svg",
+    autumn: "/images/ui/automIcon.svg",
+    whinter: "/images/ui/whinterIcon.svg"
 }
 
 export const FiledSeasonIcon: FC<Props> = (props) => {

@@ -5,7 +5,7 @@ export const LogoIcon = () => {
 
     return (
         <SDiv>
-            <SImg src="/Logo.svg" alt="ロゴ" />
+            <SImg src="/images/ui/Logo.svg" alt="ロゴ" />
         </SDiv>
     );
 };

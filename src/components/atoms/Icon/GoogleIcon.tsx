@@ -4,7 +4,7 @@ export const GoogleIcon = () => {
 
     return (
         <SDiv>
-            <img src="/GoogleIcon.svg" alt="グーグルアイコン" />
+            <img src="/images/ui/GoogleIcon.svg" alt="グーグルアイコン" />
         </SDiv>
     );
 }

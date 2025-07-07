@@ -9,7 +9,7 @@ export const TrashIcon: FC<Props> = (props) => {
     const { size } = props;
     return (
         <SDiv size={size}>
-            <SImg src="/TrashIcon.svg" alt="ゴミ箱" />
+            <SImg src="/images/ui/TrashIcon.svg" alt="ゴミ箱" />
         </SDiv>
     );
 };

@@ -4,7 +4,7 @@ export const LockKeyIcon = () => {
 
     return (
         <SDiv>
-            <img src="/LockKey.svg" alt="LockKey" />
+            <img src="/images/ui/LockKey.svg" alt="LockKey" />
         </SDiv>
     );
 };

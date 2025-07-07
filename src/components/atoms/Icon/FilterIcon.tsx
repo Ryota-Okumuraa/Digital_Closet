@@ -3,7 +3,7 @@ import Styled from "@emotion/styled";
 export const FilterIcon = () => {
     return (
         <SDiv>
-            <SImg src="/FilterIcon.svg" alt="絞り込み"/>
+            <SImg src="/images/ui/FilterIcon.svg" alt="絞り込み"/>
         </SDiv>
     );
 };

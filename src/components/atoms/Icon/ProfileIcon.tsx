@@ -5,7 +5,7 @@ export const ProfileIcon = () => {
 
     return (
         <SDiv>
-            <SImg src="/IconProfile.svg" alt="プロフィール" />
+            <SImg src="/images/ui/IconProfile.svg" alt="プロフィール" />
         </SDiv>
     );
 };

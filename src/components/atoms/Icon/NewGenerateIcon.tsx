@@ -10,7 +10,7 @@ export const NewGenerateIcon: FC<Props> = (props) => {
 
     return (
         <SDiv onClick={onClick}>
-            <SImg src="/Plus.svg" alt="プラス" />
+            <SImg src="/images/ui/Plus.svg" alt="プラス" />
         </SDiv>
     );
 };

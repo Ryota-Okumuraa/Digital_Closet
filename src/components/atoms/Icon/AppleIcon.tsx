@@ -3,7 +3,7 @@ import Styled from "@emotion/styled";
 export const AppleIcon = () => {
     return (
         <SDiv>
-            <img src="/AppleIcon.svg" alt="アップルアイコン" />
+            <img src="/images/ui/AppleIcon.svg" alt="アップルアイコン" />
         </SDiv>
     );
 }

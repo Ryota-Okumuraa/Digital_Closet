@@ -4,7 +4,7 @@ export const BackButtonIcon = () => {
 
     return (
         <SDiv>
-            <img src="/BackButtonIcon.svg" alt="戻る" />
+            <img src="/images/ui/BackButtonIcon.svg" alt="戻る" />
         </SDiv>
     );
 };

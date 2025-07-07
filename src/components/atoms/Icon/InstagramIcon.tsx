@@ -4,7 +4,7 @@ export const InstagramIcon = () => {
 
     return (
         <SDiv>
-            <img src="/InstagramIcon.svg" alt="" />
+            <img src="/images/ui/InstagramIcon.svg" alt="" />
         </SDiv>
     );
 }

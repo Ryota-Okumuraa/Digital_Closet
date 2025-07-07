@@ -14,11 +14,11 @@ export const AuthCheckbox: FC<Props> = (props) => {
         <>
             {checked ? (
                 <SDiv onClick={onClick}>
-                    <img src="/checked-box.png" alt="チェックボックス" />
+                    <img src="/images/ui/checked-box.png" alt="チェックボックス" />
                 </SDiv>
             ) : (
                 <SDiv onClick={onClick}>
-                    <img src="/check-box.png" alt="チェックボックス" />
+                    <img src="/images/ui/check-box.png" alt="チェックボックス" />
                 </SDiv>
             )}
         </>

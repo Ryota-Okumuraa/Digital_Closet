@@ -3,7 +3,7 @@ import Styled from "@emotion/styled";
 export const SearchIcon = () => {
     return (
         <SDiv>
-            <SImg src="/SearchIcon.svg" alt="検索" />
+            <SImg src="/images/ui/SearchIcon.svg" alt="検索" />
         </SDiv>
     );
 };

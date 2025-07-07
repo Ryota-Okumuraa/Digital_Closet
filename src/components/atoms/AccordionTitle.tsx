@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import Styled from "@emotion/styled";
 
-import { TShirtIcon } from "./TShirtIcon";
+import { TShirtIcon } from "./Icon/TShirtIcon";
 import { PlusIcon } from "./Icon/PlusIcon";
 import { MinusIcon } from "./Icon/MinusIcon";
 

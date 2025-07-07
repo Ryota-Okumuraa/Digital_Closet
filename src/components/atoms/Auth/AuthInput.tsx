@@ -1,8 +1,8 @@
 import { FC, JSX } from "react";
 import Styled from "@emotion/styled";
 
-import { EyeSlashOpen } from "../Icon/EyeSlashOpenIcon";
-import { EyeSlashClose } from "../Icon/EyeSlashCloseIcon";
+import { EyeSlashOpenIcon } from "../Icon/EyeSlashOpenIcon";
+import { EyeSlashCloseIcon } from "../Icon/EyeSlashCloseIcon";
 import { EmailIcon } from "../Icon/EmailIcon";
 import { LockKeyIcon } from "../Icon/LockKey";
 
@@ -43,7 +43,7 @@ export const AuthInput: FC<Props> = (props) => {
             </SIcon>
             {type === "password" ?
                 (<SRightIcon onClick={onClickRightIcon}>
-                    {rightIcon ? (<EyeSlashOpen />) : (<EyeSlashClose />)}
+                    {rightIcon ? (<EyeSlashOpenIcon />) : (<EyeSlashCloseIcon />)}
                 </SRightIcon>) : (<></>)}
         </SWrapper>
     );

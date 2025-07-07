@@ -25,7 +25,7 @@ const SCylcle = Styled.div<{ color: Props["color"] }>`
 
         if (color === "other") {
             return `
-                background-image: url("/otherColor.png");
+                background-image: url("/images/ui/otherColor.png");
                 background-size: cover;
                 background-position: center;
                 border:none;

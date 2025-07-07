@@ -3,7 +3,7 @@ import Styled from "@emotion/styled";
 export const TShirtIcon = () => {
     return (
         <SDiv>
-            <img src="/TShirt.svg" alt="Tシャツ" />
+            <img src="/images/ui/TShirt.svg" alt="Tシャツ" />
         </SDiv>
     );
 };

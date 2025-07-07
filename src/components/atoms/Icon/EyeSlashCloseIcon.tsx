@@ -3,7 +3,7 @@ import Styled from "@emotion/styled";
 export const EyeSlashCloseIcon = () => {
     return (
         <SDiv>
-            <img src="/EyeSlash.svg" alt="eye" />
+            <img src="/images/ui/EyeSlash.svg" alt="eye" />
         </SDiv>
     );
 };

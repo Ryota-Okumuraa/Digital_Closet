@@ -3,7 +3,7 @@ import Styled from "@emotion/styled";
 export const CheckIcon = () => {
     return (
         <SDiv>
-            <img src="/CheckIcon.svg" alt="eye" />
+            <img src="/images/ui/CheckIcon.svg" alt="eye" />
         </SDiv>
     );
 };
