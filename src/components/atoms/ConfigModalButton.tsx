@@ -3,21 +3,22 @@ import Styled from "@emotion/styled";
 
 type Props = {
     label: string;
+    onClick: () => void;
 }
 
 export const ConfigModalButton: FC<Props> = (props) => {
 
-    const { label } = props;
+    const { label, onClick } = props;
 
     return (
-        <SDiv>
+        <SButton onClick={onClick}>
             {label}
-        </SDiv>
+        </SButton>
     );
 }
 
 
-const SDiv = Styled.div`
+const SButton = Styled.button`
     width: fit-content;
     min-width: 160px;
     padding: 15px 20px;
@@ -26,4 +27,6 @@ const SDiv = Styled.div`
     font-size: 16px;
     cursor: pointer;
     text-align: center;
+    border: none;
+
 `

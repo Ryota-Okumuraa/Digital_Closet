@@ -3,7 +3,7 @@ import Styled from "@emotion/styled";
 export const BadIcon = () => {
     return (
         <SDiv>
-            <SImg src="/badIcon.svg" alt="バッドアイコン" />
+            <SImg src="/images/ui/badIcon.svg" alt="バッドアイコン" />
         </SDiv>
     );
 }
