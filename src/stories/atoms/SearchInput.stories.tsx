@@ -18,7 +18,6 @@ export const Default: Story = {
     args: {
         value: "",
         onChange: (e) => console.log(e.target.value),
-        onClick: () => alert('検索ボタンが押されました。'),
         placeholder: "キーワードで検索",
     }
 }
@@ -31,7 +30,6 @@ export const Interactive: StoryFn<typeof SearchInput> = () => {
             placeholder="キーワードで検索"
             value={value}
             onChange={(e) => setValue(e.target.value)}
-            onClick={() => alert('検索ボタンが押されました！')}
         />
     );
 }

@@ -14,7 +14,7 @@ type Story = StoryObj<typeof ItemThumbnail>;
 
 export const Default: Story = {
     args: {
-        imgUrl: "/itemImg.png"
+        imgUrl: "/images/products/itemImg.png"
     }
 }
 

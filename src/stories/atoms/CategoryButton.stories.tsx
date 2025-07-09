@@ -14,7 +14,7 @@ type Story = StoryObj<typeof CategoryButton>;
 
 export const Default: Story = {
     args: {
-        label: "ウェア"
+        label: "ウェア",
     }
 }
 
