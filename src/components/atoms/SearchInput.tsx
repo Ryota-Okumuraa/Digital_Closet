@@ -1,7 +1,6 @@
-import { FC } from "react";
 import Styled from "@emotion/styled";
-import { SearchIcon } from "./Icon/SeachIcon";
 
+import { SearchIcon } from "./Icon/SeachIcon";
 
 type Props = {
     value: string;
@@ -10,9 +9,7 @@ type Props = {
 }
 
 
-export const SearchInput: FC<Props> = (props) => {
-    const { value, onChange, placeholder } = props;
-
+export const SearchInput = ({ value, onChange, placeholder }: Props) => {
     return (
         <SWrapper>
             <SDiv>
@@ -30,6 +27,7 @@ const SWrapper = Styled.div`
     border-radius: 10px;
     background-color: #e5e5e5;
 `
+
 const SDiv = Styled.div`
     width: 20px;
     height: 20px;

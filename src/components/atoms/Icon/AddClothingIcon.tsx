@@ -1,21 +1,19 @@
-import { FC } from "react";
+import { ButtonHTMLAttributes } from "react";
 import Styled from "@emotion/styled";
 
 type Props = {
     onClick: () => void;
-}
+} & ButtonHTMLAttributes<HTMLButtonElement>
 
-export const NewGenerateIcon: FC<Props> = (props) => {
-    const { onClick } = props;
-
+export const AddClothingIcon = ({ onClick, ...rest }: Props) => {
     return (
-        <SDiv onClick={onClick}>
-            <SImg src="/images/ui/Plus.svg" alt="プラス" />
-        </SDiv>
+        <SButton onClick={onClick} {...rest} type="button">
+            <SImg src="/images/ui/Plus.svg" alt="新規作成アイコン" />
+        </SButton>
     );
 };
 
-const SDiv = Styled.button`
+const SButton = Styled.button`
     border-radius: 9999px;
     display: grid;
     place-content: center;

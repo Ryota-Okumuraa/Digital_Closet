@@ -1,14 +1,11 @@
-import { FC, memo } from "react";
+import { memo } from "react";
 import Styled from "@emotion/styled";
-
 
 type Props = {
     imgUrl: string;
 }
 
-
-export const ItemThumbnail: FC<Props> = memo((props) => {
-    const { imgUrl } = props;
+export const ItemThumbnail = memo(({ imgUrl }: Props) => {
     return (
         <SDiv>
             <SImg src={imgUrl} alt="自分の服"></SImg>
@@ -28,7 +25,3 @@ const SImg = Styled.img`
     object-fit: cover;
     width: 100%;
 `
-
-
-
-

@@ -1,20 +1,17 @@
-import { FC } from "react";
 import Styled from "@emotion/styled";
 
-
 type Props = {
-    season: "spring" | "summer" | "autumn" | "whinter";
+    season: "spring" | "summer" | "autumn" | "winter";
 }
 
 const seasonMap: { [key in Props["season"]]: string } = {
     spring: "/images/ui/springIcon.svg",
     summer: "/images/ui/summerIcon.svg",
     autumn: "/images/ui/automIcon.svg",
-    whinter: "/images/ui/whinterIcon.svg"
+    winter: "/images/ui/whinterIcon.svg"
 }
 
-export const FiledSeasonIcon: FC<Props> = (props) => {
-    const { season } = props;
+export const FiledSeasonIcon = ({ season }: Props) => {
     return (
         <SCiycle>
             <img src={seasonMap[season]} alt={season} />
@@ -26,7 +23,3 @@ const SCiycle = Styled.div`
     height: 30px;
     border-radius: 9999px;
 `
-
-
-
-

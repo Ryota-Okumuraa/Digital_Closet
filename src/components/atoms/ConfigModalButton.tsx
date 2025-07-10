@@ -1,17 +1,15 @@
-import React, { FC } from "react";
+import React from "react";
 import Styled from "@emotion/styled";
 
-type Props = {
+export type ConfigModalButtonProps = {
     label: string;
     onClick: () => void;
-}
+} & React.ButtonHTMLAttributes<HTMLButtonElement>
 
-export const ConfigModalButton: FC<Props> = (props) => {
-
-    const { label, onClick } = props;
+export const ConfigModalButton = ({ label, onClick, ...rest }: ConfigModalButtonProps) => {
 
     return (
-        <SButton onClick={onClick}>
+        <SButton onClick={onClick} type="button" {...rest}>
             {label}
         </SButton>
     );

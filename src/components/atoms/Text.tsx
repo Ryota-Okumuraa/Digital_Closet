@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import React from "react";
 import Styled from "@emotion/styled";
 
 type TextSize = "xl" | "l" | "base" | "s" | "xs"
@@ -11,8 +11,7 @@ type Props = {
     lineHeight?: string
 }
 
-export const Text: FC<Props> = (props) => {
-    const { children, size, weight = "normal", color = "#000", lineHeight = "20px" } = props;
+export const Text = ({ children, size, weight = "normal", color = "#000", lineHeight = "20px" }: Props) => {
     return (
         <SText size={size} color={color} weight={weight} lineHeight={lineHeight}>
             {children}

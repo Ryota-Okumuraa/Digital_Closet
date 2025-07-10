@@ -1,9 +1,9 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
-import { FiledColorIcon } from "@/components/atoms/FiledColorIcon";
+import { FiledColorIcon } from "@/components/atoms/Icon/FiledColorIcon";
 
 const meta: Meta<typeof FiledColorIcon> = {
-    title: "Atoms/FiledColorIcon",
+    title: "Atoms/Icon/FiledColorIcon",
     component: FiledColorIcon,
     tags: ["autodocs"]
 }

@@ -1,33 +1,27 @@
-import { FC } from "react";
 import Styled from "@emotion/styled";
-
 
 type Props = {
     checked: boolean;
     onClick: () => void;
 }
 
-
-export const AuthCheckbox: FC<Props> = (props) => {
-    const { checked, onClick } = props
+export const AuthCheckbox = ({ checked, onClick }: Props) => {
     return (
-        <>
-            {checked ? (
-                <SDiv onClick={onClick}>
-                    <img src="/images/ui/checked-box.png" alt="チェックボックス" />
-                </SDiv>
-            ) : (
-                <SDiv onClick={onClick}>
-                    <img src="/images/ui/check-box.png" alt="チェックボックス" />
-                </SDiv>
-            )}
-        </>
+        <SButton onClick={onClick} role="button">
+            <img
+                src={checked ? "/images/ui/checked-box.png" : "/images/ui/check-box.png"}
+                alt={checked ? "チェック済み" : "未チェック"}
+            />
+        </SButton>
     );
 };
 
-const SDiv = Styled.div`
+const SButton = Styled.button`
     width: 30px;
     height: 30px;
+    border: none;
+    padding: 0;
+    background-color: unset;
 `
 
 

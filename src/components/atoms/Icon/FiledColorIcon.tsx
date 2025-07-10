@@ -1,20 +1,18 @@
-import { FC } from "react";
 import Styled from "@emotion/styled";
-
 
 type Props = {
     color: "red" | "orange" | "pink" | "white" | "yellow" | "black" | "green" | "gray" | "blue" | "brown" | "purple" | "beige" | "other";
 }
 
-export const FiledColorIcon: FC<Props> = (props) => {
-    const { color } = props
-    return <SCylcle color={color} />
+export const FiledColorIcon = ({ color }: Props) => {
+    return <SCircle color={color} />
 };
 
-const SCylcle = Styled.div<{ color: Props["color"] }>`
+const SCircle = Styled.div<{ color: Props["color"] }>`
     width: 30px;
     height: 30px;
-    border-radius: 99999px;
+    border-radius: 50%;
+    
     ${({ color }) => {
         if (color === "white") {
             return `
@@ -53,7 +51,7 @@ const SCylcle = Styled.div<{ color: Props["color"] }>`
         return `
             background-color: ${bg};
             border: none;
-    `;
+        `;
     }}
 
 `

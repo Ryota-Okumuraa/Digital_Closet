@@ -1,12 +1,11 @@
-import React, { FC } from "react";
+import React from "react";
 import Styled from "@emotion/styled";
 
 type Props = {
     label: string;
 }
 
-export const CategoryButton: FC<Props> = (props) => {
-    const { label } = props;
+export const CategoryButton = ({ label }: Props) => {
     return (
         <SDiv>
             <SBar></SBar>

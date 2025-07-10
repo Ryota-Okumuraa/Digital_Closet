@@ -1,4 +1,4 @@
-import { FC, JSX } from "react";
+import { JSX } from "react";
 import Styled from "@emotion/styled";
 
 import { EyeSlashOpenIcon } from "../Icon/EyeSlashOpenIcon";
@@ -7,9 +7,8 @@ import { EmailIcon } from "../Icon/EmailIcon";
 import { LockKeyIcon } from "../Icon/LockKey";
 import { AuthInputProps, AuthInputKind } from "@/type/form";
 
-
-export const AuthInput: FC<AuthInputProps> = (props) => {
-    const { type, rightIcon = false, value, placeholder, onChange, onClickRightIcon } = props;
+export const AuthInput = (props: AuthInputProps) => {
+    const { type, rightIcon = false, value, placeholder, onChange, onClickRightIcon, ...rest } = props;
 
     const IconMap: Record<AuthInputKind, JSX.Element> = {
         email: <EmailIcon />,
@@ -29,12 +28,18 @@ export const AuthInput: FC<AuthInputProps> = (props) => {
                 value={value}
                 name={type}
                 autoComplete="off"
+                {...rest}
             />
             <SIcon>
                 {IconMap[type]}
             </SIcon>
             {type === "password" ?
-                (<SRightIcon onClick={onClickRightIcon}>
+                (<SRightIcon
+                    onClick={onClickRightIcon}
+                    role="button"
+                    tabIndex={0}
+                    aria-label={rightIcon ? "パスワードを非表示" : "パスワードを表示"}
+                >
                     {rightIcon ? (<EyeSlashOpenIcon />) : (<EyeSlashCloseIcon />)}
                 </SRightIcon>) : (<></>)}
         </SWrapper>

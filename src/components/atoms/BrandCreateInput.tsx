@@ -1,16 +1,15 @@
-import React, { FC } from "react";
+import React, { InputHTMLAttributes } from "react";
 import Styled from "@emotion/styled";
 
 export type BrandCreateInputProps = {
     placeholder: string;
     value: string;
     onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
-}
+} & InputHTMLAttributes<HTMLInputElement>
 
-export const BrandCreateInput: FC<BrandCreateInputProps> = (props) => {
-    const { placeholder, value, onChange } = props;
+export const BrandCreateInput = ({placeholder, value, onChange, ...rest}: BrandCreateInputProps) => {
     return (
-        <SInput placeholder={placeholder} value={value} onChange={onChange} />
+        <SInput type="text" placeholder={placeholder} value={value} onChange={onChange} {...rest} />
     );
 };
 
@@ -26,5 +25,5 @@ const SInput = Styled.input`
     width: 100%;
     outline: none;
     box-shadow: none;
-    caret-color: #000; /* 入力中のカーソル色を指定したい場合 */
+    caret-color: #000;
 `

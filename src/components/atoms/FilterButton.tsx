@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import React, { ButtonHTMLAttributes } from "react";
 import Styled from "@emotion/styled";
 
 import { FilterIcon } from "./Icon/FilterIcon";
@@ -6,19 +6,18 @@ import { FilterIcon } from "./Icon/FilterIcon";
 type Props = {
     children: React.ReactNode;
     onClick: () => void;
-}
+} & ButtonHTMLAttributes<HTMLButtonElement>
 
-export const FilterButton: FC<Props> = (props) => {
-    const { children, onClick } = props;
+export const FilterButton = ({ children, onClick, ...rest }: Props) => {
     return (
-        <SWrapper onClick={onClick}>
+        <SButton onClick={onClick} {...rest} >
             <FilterIcon />
             {children}
-        </SWrapper>
+        </SButton>
     );
 };
 
-const SWrapper = Styled.button`
+const SButton = Styled.button`
     display: flex;
     gap: 5px;
     border-radius: 10px;
@@ -29,4 +28,3 @@ const SWrapper = Styled.button`
     font-size: 14px;
     padding: 10px;
 `
-

@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import React from "react";
 import Styled from "@emotion/styled";
 
 import { TShirtIcon } from "./Icon/TShirtIcon";
@@ -11,24 +11,20 @@ type Props = {
     onClick: () => void;
 }
 
-export const AccordionTitle: FC<Props> = (props) => {
-    const { label, onClick, isOpen } = props;
+export const AccordionTitle = ({ label, onClick, isOpen }: Props) => {
     return (
         <SWrapper onClick={onClick}>
             <SInner>
                 <TShirtIcon />
                 <span>{label}</span>
             </SInner>
-            {isOpen ? (
-                <PlusIcon />
-            ) :
-                (<MinusIcon />)
-            }
+            {isOpen ? (<MinusIcon />) : (<PlusIcon />)}
         </SWrapper>
     );
 };
 
-const SWrapper = Styled.div`
+const SWrapper = Styled.button`
+    all: unset;
     border-bottom: 3px solid #bababa;
     display: flex;
     justify-content: space-between;
@@ -36,6 +32,7 @@ const SWrapper = Styled.div`
     height: 50px;
     width: 100%;
     align-items: center;
+    cursor: pointer;
 `
 
 const SInner = Styled.div`

@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import React from "react";
 import Styled from "@emotion/styled";
 import Link from "next/link";
 
@@ -7,8 +7,7 @@ type Props = {
 }
 
 
-export const ForgotPasswordText: FC<Props> = (props) => {
-    const { children } = props
+export const ForgotPasswordText = ({ children }: Props) => {
     return (
         <Link href='/forgot-password'>
             <SLink>{children}</SLink>

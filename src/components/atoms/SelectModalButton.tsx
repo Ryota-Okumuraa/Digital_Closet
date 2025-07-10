@@ -1,21 +1,17 @@
-import React, { FC } from "react";
+import React from "react";
 import Styled from "@emotion/styled";
 
 type Props = {
     label: string;
 }
 
-export const SelectModalButton: FC<Props> = (props) => {
-
-    const { label } = props;
-
+export const SelectModalButton = ({ label }: Props) => {
     return (
         <SDiv>
             {label}
         </SDiv>
     );
 }
-
 
 const SDiv = Styled.div`
     width: 100%;
@@ -28,4 +24,3 @@ const SDiv = Styled.div`
     display: grid;
     place-content: center;
 `
-

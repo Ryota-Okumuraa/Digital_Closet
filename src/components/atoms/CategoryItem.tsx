@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import React, { InputHTMLAttributes } from "react";
 import Styled from "@emotion/styled";
 
 type Props = {
@@ -8,19 +8,22 @@ type Props = {
     showCheckbox?: boolean
     checked?: boolean;
     onCheckChange?: (checked: boolean) => void;
-}
+} & InputHTMLAttributes<HTMLInputElement>
 
-export const CategoryItem: FC<Props> = (props) => {
-    const { label, onClick, isActive = false, showCheckbox = false, checked = false, onCheckChange } = props;
+export const CategoryItem = ({ label, onClick, isActive = false, showCheckbox = false, checked = false, onCheckChange, ...rest }: Props) => {
 
     return (
         <SWrapper isActive={(isActive)} onClick={onClick}>
             <span>{label}</span>
             {showCheckbox && (
-                <SCheckbox type="checkbox" checked={checked} onChange={(e) => {
-                    onCheckChange?.(e.target.checked);
-                }}
-                    onClick={(e) => e.stopPropagation()} // 親のonClick防止
+                <SCheckbox
+                    {...rest}
+                    type="checkbox"
+                    checked={checked}
+                    onChange={(e) => {
+                        onCheckChange?.(e.target.checked);
+                    }}
+                    onClick={(e) => e.stopPropagation()}
                 >
                 </SCheckbox>
             )}
@@ -28,7 +31,8 @@ export const CategoryItem: FC<Props> = (props) => {
     );
 };
 
-const SWrapper = Styled.div<{ isActive: boolean }>`
+const SWrapper = Styled.button<{ isActive: boolean }>`
+    all: unset;
     display: flex;
     justify-content: space-between;
     padding: 0 20px;

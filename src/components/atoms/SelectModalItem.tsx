@@ -1,21 +1,17 @@
-import React, { FC } from "react";
+import React from "react";
 import Styled from "@emotion/styled";
 
 type Props = {
     label: string;
 }
 
-export const SelectModalItem: FC<Props> = (props) => {
-
-    const { label } = props;
-
+export const SelectModalItem = ({ label }: Props) => {
     return (
         <SDiv>
             {label}
         </SDiv>
     );
 }
-
 
 const SDiv = Styled.div`
     width: 100%;

@@ -1,7 +1,7 @@
-import React, { FC } from "react";
+import React from "react";
 import Styled from "@emotion/styled";
-import { BadIcon } from "./Icon/BadIcon";
 
+import { BadIcon } from "./Icon/BadIcon";
 
 type Props = {
     children: React.ReactNode;
@@ -9,9 +9,7 @@ type Props = {
     onClick?: () => void;
 }
 
-
-export const SearchHistoryItem: FC<Props> = (props) => {
-    const { children, isActive, onClick } = props;
+export const SearchHistoryItem = ({ children, isActive, onClick }: Props) => {
     return (
         <SDiv isActive={isActive}>
             {isActive ? (
@@ -37,6 +35,3 @@ const SDiv = Styled.div<{ isActive: boolean }>`
     align-items: center;
     height: 30px;
 `
-
-
-

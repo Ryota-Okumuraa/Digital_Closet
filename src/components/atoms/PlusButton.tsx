@@ -1,16 +1,15 @@
-import { FC } from "react";
+import { ButtonHTMLAttributes } from "react";
 import Styled from "@emotion/styled";
+
 import { PlusIcon } from "./Icon/PlusIcon";
 
 type Props = {
     onClick: () => void
-}
+} & ButtonHTMLAttributes<HTMLButtonElement>
 
-export const PlusButton: FC<Props> = (props) => {
-    const { onClick } = props
-
+export const PlusButton = ({ onClick, ...rest }: Props) => {
     return (
-        <SButton onClick={onClick}>
+        <SButton onClick={onClick} {...rest}>
             <PlusIcon></PlusIcon>
         </SButton>
     );
@@ -26,5 +25,3 @@ const SButton = Styled.button`
     border-radius: 10px;
     align-items: center;
 `
-
-

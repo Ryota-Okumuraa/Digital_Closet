@@ -14,7 +14,7 @@ type Story = StoryObj<typeof ConfigModalButton>;
 
 export const Default: Story = {
     args: {
-        onClick: () => alert('モーダルボタンがクリックされました!'),
+        onClick: () => action("ConfigModalButton clicked"),
         label: "ウェア",
     }
 }

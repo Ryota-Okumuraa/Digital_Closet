@@ -6,8 +6,7 @@ type Props = {
     name: string;
 }
 
-export const ItemName: FC<Props> = (props) => {
-    const { name } = props
+export const ItemName = ({ name }: Props) => {
     return (
         <SDiv>
             <p>{name}</p>
@@ -23,4 +22,3 @@ const SDiv = Styled.div`
     width: 100%;
     backdrop-filter: blur(10px);
 `
-
